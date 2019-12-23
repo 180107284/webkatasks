@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mmm...Delicious!</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="style1.css" rel="stylesheet" type="text/css" media="all">
+<script type = "text/javascript">
+function validate() {
+         if( document.myForm.username.value == "" ) {
+            alert( "Please provide your username!" );
+            document.myForm.username.focus() ;
+            return false;
+         }
+         if( document.myForm.email.value == "" ) {
+            alert( "Please provide your Email!" );
+            document.myForm.email.focus() ;
+            return false;
+         }
+         if( document.myForm.password.value == "" ) {
+            alert( "Please provide your password!" );
+            document.myForm.password.focus() ;
+            return false;
+         }
+       }
+       </script>
+</head>
+<body id="top">
+<!--Background Image -->
+<div class="bgded overlay" style="background-image:url('img/bg4.jpg');"> 
+  <div class="wrapper row0">
+    <div id="topbar" class="hoc clear"> 
+      <div class="fl_left">
+        <ul>
+          <li><i class="fa fa-phone"></i> 8775 653 0223</li>
+          <li><i class="fa fa-envelope-o"></i> info@delicious.com</li>
+        </ul>
+      </div>
+      <div class="fl_right">
+        <ul>
+          <li><a href="#login">Login</a></li>
+          <li><a href="#signup">Register</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper row1">
+    <header id="header" class="hoc clear">     
+      <div id="logo" class="fl_left">
+        <h1><a href="index.html">Mmm...Delicious!</a></h1>
+      </div>
+      <nav class="nav" id="nav">
+                  <a class="nav__link" href="index.html" data-scroll="#home">Home</a>
+                  <a class="nav__link" href="recipes.html" data-scroll="#recipes">Recipes</a>
+                  <a class="nav__link" href="4vegans.html" data-scroll="#vegans">4 Vegans</a>
+                  <a class="nav__link" href="contact.html" data-scroll="#contact">Contact</a>
+       </nav>
+
+    </header>
+  </div>
+  <div id="pageintro" class="hoc clear"> 
+          <article>    
+            <h3 class="heading">Welcome to our blog!</h3>
+            <h6>Here you find best cooking recipes</h6>
+            <footer>
+              <form class="group" method="post" action="#">
+                <fieldset>
+                  <input type="email" value="" placeholder="Email Here">
+                  <button class="fa fa-sign-in" type="submit" title="Submit"><em>Submit</em></button>
+                </fieldset>
+              </form>
+            </footer>
+          </article>     
+    </div>
+  </div> 
+
+<div class="log">
+  <div class="signup">
+<h1>Sign up</h1>
+<form class="form" name="myForm" method="post" onclick="validate());">
+<p class="field">
+<input type="text" name="name" placeholder="Username" />
+ <div id="UserBlank" class="bg-danger text-white my-2 pl-2"></div>
+<p class="field">
+<input type="text" name="email" placeholder="Email" />
+ <div id="EmailBlank" class="bg-danger text-white my-2 pl-2"></div>
+</p>
+<p class="field">
+<input type="password" name="password" placeholder="Password" /> 
+<div id="PassBlank" class="bg-danger text-white my-2 pl-2"></div>
+</p>
+<p class="submit"><input type="submit" name="" type="submit" value="Signup" /> </p>
+</form>
+</div> 
+<div class="login">
+<h1>Login</h1>
+<h2 style="text-align: center;color:white;">Welcome back!</h2>
+<form class="form" name="myForm" onsubmit="return validate());">
+<p class="field">
+<input type="text" name="email" placeholder="Email" />
+</p>
+<p class="field">
+<input type="password" name="password" placeholder="Password"  />
+</p<p class="submit"><input type="submit" name="" type="submit" value="Login" /></p>
+</form>
+</div> 
+</div>
+
+<h2>Accordion</h2>
+
+<button class="accordion">Latest recipe</button>
+<div class="panel">
+  <<img src="img/cookie.jpg" style="height: 450px;">
+  <h2 style="font-weight: 700;
+    letter-spacing: 3px;
+    line-height: 1.3;
+    margin: 7px 0 17px;
+    padding: 0;
+    text-transform: uppercase;color:black;text-align: center;">HOW TO MAKE UGLY SWEATER SUGAR COOKIES</h2>
+<ol><li>Make cookie dough (recipe follows) and chill.</li>
+<li>Roll out between two pieces of parchment paper to about 1/4″ thickness (a little less than that).</li>
+<li>Cut using an Ugly Sweater cutter. Do not move cookie from parchment.</li>
+<li>Remove excess dough, then slide parchment paper onto a half sheet pan.</li>
+<li>The key to nicely shaped cookies is to NOT move them after they are cut!</li>
+<li>Bake for 10-13 minutes on 350°F and let cool.</li>
+<li>Make royal icing (recipe follows) and decorate cookies. See below for tips.</li>
+<li>Ugly Sweater Christmas Cut-Out Sugar Cookies</li></ol>
+</div>
+</div>
+
+<button class="accordion">Christmas cookies</button>
+<div class="panel">
+  <img src="img/cookie.jpg" style="height: 450px;">
+  <h2 style="font-weight: 700;
+    letter-spacing: 3px;
+    line-height: 1.3;
+    margin: 7px 0 17px;
+    padding: 0;
+    text-transform: uppercase;color:black;text-align: center;">HOW TO MAKE UGLY SWEATER SUGAR COOKIES</h2>
+<ol><li>Make cookie dough (recipe follows) and chill.</li>
+<li>Roll out between two pieces of parchment paper to about 1/4″ thickness (a little less than that).</li>
+<li>Cut using an Ugly Sweater cutter. Do not move cookie from parchment.</li>
+<li>Remove excess dough, then slide parchment paper onto a half sheet pan.</li>
+<li>The key to nicely shaped cookies is to NOT move them after they are cut!</li>
+<li>Bake for 10-13 minutes on 350°F and let cool.</li>
+<li>Make royal icing (recipe follows) and decorate cookies. See below for tips.</li>
+<li>Ugly Sweater Christmas Cut-Out Sugar Cookies</li></ol>
+</div>
+
+<button class="accordion">Birthday cake</button>
+<div class="panel">
+  <img src="img/cookie.jpg" style="height: 450px;">
+  <h2 style="font-weight: 700;
+    letter-spacing: 3px;
+    line-height: 1.3;
+    margin: 7px 0 17px;
+    padding: 0;
+    text-transform: uppercase;color:black;text-align: center;">HOW TO MAKE UGLY SWEATER SUGAR COOKIES</h2>
+<ol><li>Make cookie dough (recipe follows) and chill.</li>
+<li>Roll out between two pieces of parchment paper to about 1/4″ thickness (a little less than that).</li>
+<li>Cut using an Ugly Sweater cutter. Do not move cookie from parchment.</li>
+<li>Remove excess dough, then slide parchment paper onto a half sheet pan.</li>
+<li>The key to nicely shaped cookies is to NOT move them after they are cut!</li>
+<li>Bake for 10-13 minutes on 350°F and let cool.</li>
+<li>Make royal icing (recipe follows) and decorate cookies. See below for tips.</li>
+<li>Ugly Sweater Christmas Cut-Out Sugar Cookies</li></ol>
+</div>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+
+    <!-- Follow Us Instagram -->
+    <div class="follow-us-instagram">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h5>Follow Us Instragram</h5>
+                </div>
+            </div>
+        <div class="insta-feeds d-flex flex-wrap">
+            <div class="single-insta-feeds">
+                <img src="img/insta1.jpg" alt="">
+            </div>
+            <div class="single-insta-feeds">
+                <img src="img/insta2.jpg" alt="">
+            </div>
+            <div class="single-insta-feeds">
+                <img src="img/insta3.jpg" alt="">
+            </div>
+            <div class="single-insta-feeds">
+                <img src="img/insta4.jpg" alt="">
+            </div>
+            <div class="single-insta-feeds">
+                <img src="img/insta5.jpg" alt="">
+            </div>
+            <div class="single-insta-feeds">
+                <img src="img/insta6.jpg" alt="">             
+            </div>
+            <div class="single-insta-feeds">
+                <img src="img/insta7.jpg" alt="">                
+            </div>
+        </div>
+    </div>
+	</div>
+    <!-- Follow Us Instagram -->
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>	
+  <div class="wrapper row4 bgded overlay" style="background-color:black;">
+  <footer id="footer" class="hoc clear"> 
+    <div class="one_third first">
+      <h6 class="title">SHARE WITH LOVE</h6>
+      <ul class="faico clear">
+        <li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a class="faicon-dribble" href="#"><i class="fa fa-dribbble"></i></a></li>
+        <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+        <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+        <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
+      </ul>
+    </div>
+    <div class="one_third">
+      <h6 class="title">Address</h6>
+      <ul class="nospace linklist contact">
+        <li><i class="fa fa-map-marker"></i>
+          <address>Abylaikhan st.1/1,Altyn Auyl</address>
+        </li>
+        <li><i class="fa fa-phone"></i> 8775 653 0223</li>
+        <li><i class="fa fa-envelope-o"></i> info@delicious.com</li>
+      </ul>
+    </div>
+    <div class="one_third">
+            <h2><a href="#">MORE INFO ABOUT US</a></h2>
+    </div>
+  </footer>
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <p class="fl_left">Copyright 2019 - All Rights Reserved</p>
+  </div>
+</div>
+</body>
+</html>
